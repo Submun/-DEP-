@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill</title>
+    <!-- <link rel="stylesheet" href="css/utils.css"> -->
+    <script>
+                    
+        let nor_barcode_encoded_txt = 'E1414621111100008242009240000158490000169686E';
+        JsBarcode("#normal_bill_barcode", nor_barcode_encoded_txt, {
+            width: 1,
+            height: 50,
+            margin: 5,
+            displayValue: false
+        });
+        
+    </script>
+
+    </div>
+
+    <div>
+        
+        <div style="text-align: right; direction: rtl; margin-right:50px; font-weight: bold; font-size: 16px">
+        موجودہ بل = 21099 
+            <br>
+        وزیر اعلیٰ پنجاب کی جانب سے ریلیف = 5250
+        </div>
+        
+
+    </div>
+
+</div>
+
+<!-- <div style="width: 98%; margin: 0 auto 10px;">
+    <table style="text-align: center; width: 100%; border-collapse: collapse;">
+        <tr style="height: 30px;">
+            <td class="border-rb border-t" style="width: 15%; color: #78578e; border-left: 1px solid #78578e;">
+                <h4>BILL MONTH</h4>
+            </td>
+            <td class="border-rb border-t" style="width: 15%; color: #78578e;">
+                <h4>DUE DATE</h4>
+            </td>
+            <td class="border-rb border-t" style="width: 25%; color: #78578e;">
+                <h4>REFERENCE NO</h4>
+            </td>
+            <td class="border-rb border-t" style="width: 25%; color: red">
+                <h4>PAYABLE WITHIN DUE DATE</h4>
+            </td>
+            <td class="border-b border-t border-r content" style="width: 20%;">
+
+                
+                
+
+                        <div style="display: inline-block; margin-right: 10px;">
+                            15849
+                        </div>
+                        <div style="display: inline-block;">
+                            <del>21099</del>
+                        </div>
+
+                
+
+                
+            </td>
+        </tr>
+        <tr style="height: 40px;">
+            <td class="border-rb content" style="width: 15%; text-align: center; border-left: 1px solid #78578e;">
+                AUG 24
+            </td>
+            <td class="border-rb content" style="width: 15%; text-align: center;">
+                20 SEP 24
+            </td>
+            <td class="font-size border-rb content" style="width: 25%; text-align: Center;">
+                14 14621 1111000 U
+                
+            </td>
+            <td class="border-rb" style="width: 25%; color: red;">
+                <h4>PAYABLE AFTER DUE DATE</h4>
+            </td>
+            <td class="font-size border-rb border-r content" style="width: 15%;">
+
+                
+                
+
+                        <div style="display: inline-block; margin-right: 10px;">
+                            16968
+                        </div>
+                        <div style="display: inline-block;">
+                            <del>22743</del>
+                        </div>
+
+                
+
+                
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+
+</div> -->
+
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="/js/implementation_zoomJs.js"></script>
+<script type="text/javascript" src="/js/multizoom.js"></script>
+
+    <style>
+         header{
+            height: 15vh;
+            border: 2px solid rgb(102, 47, 102);
+        }
+        main{
+            /* min-height: 60vh; */
+            /* min-height: calc(100vh-15vh-10vh); */
+            min-height: 60vh;
+            border: 2px solid rgb(102, 47, 102);
+        }
+        footer{
+            height: 30vh;
+            border: 2px solid rgb(102, 47, 102);
+        }
+        section{
+            display: inline;
+        }
+        article{
+            padding: 10px 40px;
+            display: inline;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            position: absolute;
+            color: purple;
+        }
+        aside{
+            display: inline;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            padding:20px;
+            float: right;
+            color: blue;
+        }
+        article p{
+            display: inline;
+            padding: 10px 30px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+        .b{
+            height: 100vh;
+            width: 100vw;
+            border: 5px solid rgb(31, 7, 20);
+            margin: 10px;
+            /* display: inline-flex; */
+        }
+        table {
+  border-collapse: collapse;
+  width: 80rem;
+  height: 5pxs;
+  border: 1px solid rgb(102, 47, 102);
+}s
+th, td {
+  text-align: left;
+  /* padding: 8px; */
+  border: 1px solid rgb(102, 47, 102);
+}
+
+tr:nth-child(even) {
+    border: 1px solid rgb(102, 47, 102);
+}
+
+th{
+    border: 1px solid rgb(102, 47, 102);
+}
+.c5{
+    display: absolute;
+}
+.totalcharges{
+    display: absolute;
+}
+    </style>
+
+</head>
+<body>
+    <div class="b">
+    <header>
+        <section><img src="css/isco logo.png" width="200px" alt="iscologo"></section>
+        <article>ISLAMABAD ELECTRIC SUPPLY COMPANY (LTD).<br>
+           <p>YOUR BETTER SERVICE - OUR PRIDE </p>
+           <p>ELECTRICITY CONSUMER BILL</p>
+        </article>
+        <aside> IESCO GST No. 26-00-2716-001-91 </aside>
+    </header>
+    <main>
+        <div class="mt">
+        <table>
+            <tr>
+              <th>CONNECTION DATE</th>
+              <th>CONNECTED LOAD</th>
+              <th>ED@</th>
+              <th>BILL MONTH</th>
+              <th>READING DATE</th>
+              <th>ISSUE DATE</th>
+              <th>DUE DATE</th>
+            </tr>
+            <tr>
+              <td>30 SEP 13</td>
+              <td></td>
+              <td>1.5%</td>
+              <td>AUG 24</td>
+              <td>28 AUG 24</td>
+              <td>31 AUG 24</td>
+              <td>20 SEP 24</td>
+            </tr>
+            <tr>
+              <th>CONSUMER ID</th>
+              <th>TARIFF</th>
+              <th>LOAD</th>
+              <th>OLD A/C NUMBER</th>
+              <th>DIVISION</th>
+              <th>TARIQABAD</th>
+            </tr>
+            <tr>
+              <td>1142011041</td>
+              <td>A-1a(01)</td>
+              <td>1</td>
+              <td>14143611111000</td>
+              <td>SUB DIVISION</td>
+              <td>TARIQABAD</td>
+            </tr>
+            <tr>
+              <th>REFERENCE NO</th>
+              <th>LOCK AGE</th>
+              <th>No of ACs</th>
+              <th>UN-BILL-AGE</th>
+              <th>FEEDER NAME</th>
+              <th>002525 HAMMAYUN ROAD</th>
+            </tr>
+            <tr>
+              <td>14 14621 1111000 U</td>
+              <td></td>
+              <td></td>
+              <td></td>
+             <td></td>
+              <td>Web Generated Bill</td>
+            </tr>
+        </div>
+        <div class="2">
+            <tr>
+                <td colspan="1">
+                    <p style="margin: 0; text-align: left; padding-left: 5px">
+                        <span>NAME & ADDRESS</span>
+                        <br />
+                        <span>M. ILYAS                      </span>
+                        <br />
+                        <span>S/O M. AMIN                   </span>
+                        <br />
+                        <span>VILL KHATANA TEH & DISTT      </span>
+                        <br />
+                        <span>RWP                           </span>
+                        <br />
+                        <span></span>
+                        
+                        
+                    </p>
+                </td>
+                <td colspan="3" style="text-align: left">
+                    <h2 class="color-red">Say No To Corruption</h2>
+                    
+                        <h3 style="border: 1px solid black; padding: 10px;">Pay your bill through 1Link-1Bill by using code 111444 before Electricity bill reference number</h3>                                
+                    
+
+                  
+                <td colspan="3" style="margin-top: 0;" class="border-b">
+                    <strong lang="ur" dir="rtl" style="font-size: 16px">
+                                                            <pre></pre>
+                    </strong>
+                </td>
+            </tr>
+        </div>
+        <div class="3">
+            <td colspan="4" style="margin-top: 0;" class="border-b">
+                    <strong lang="ur" dir="rtl" style="font-size: 16px">
+                                                            معزز صارف : بجلی کے بل میں ایندھن کی قیمت کا فرق   (FPA)دو ماہ بعد شامل کیا جاتا ہے آپ کے  اس بل میں JUN 24 کے صرف شدہ 456 یونٹس کے ایندھن کی قیمت کے  1399.12 روپے بھی شامل ہیں
+                    </strong>
+                </td>
+        </div>
+    </table>
+        <div class="4">
+            <table>
+            <tr style="height: 7%;" class="border-tb"></tr>
+                <td style="width: 130px" class="border-r">
+                    <h4>METER NO</h4>
+                </td>
+                <td style="width: 90px" class="border-r">
+                    <h4>PREVIOUS READING</h4>
+                </td>
+                <td style="width: 90px" class="border-r">
+                    <h4>PRESENT READING</h4>
+                </td>
+                <td style="width: 60px" class="border-r">
+                    <h4>MF</h4>
+                </td>
+                <td style="width: 60px" class="border-r">
+                    <h4>UNITS</h4>
+                </td>
+                <td>
+                    <h4>STATUS</h4>
+                </td>
+            </tr>
+        </div>
+            <div class="t1">
+            <tr style="height: 30px" class="content">
+                <td class="border-r">
+                    S-P  5307543<br>
+                </td>
+                <td class="border-r">
+                    23465<br>
+                </td>
+                <td class="border-r">
+                    23840<br>
+                </td>
+                <td class="border-r">
+                    1<br>
+                </td>
+                <td class="border-r">
+                    375<br>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </div>
+    </table>
+    <div>
+        <img src="css/div4img.png" alt="">
+    </div>
+        <div class="border-t" style="width: 755pt; height: 430pt">
+            <table class="nested7" style="width: 454pt; height: 411pt; float: left">
+                <tr class="fontsize" style="height: 28px; width: 100%">
+                    <td colspan="2" class="border-rb" style="text-align: center; font-size: 16px; background-color: #B2E6FF">
+                        <b>
+                            IESCO
+                            CHARGES
+                        </b>
+                    </td>
+                    <td colspan="2" class="border-rb" style="text-align: center; font-size: 16px; background-color: #FFB2B2;">
+                        <b>GOVT CHARGES</b>
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF">
+                        <b>UNITS CONSUMED</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                        375
+                        <br />
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>ELECTRICITY DUTY</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        225
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF">
+                        <b>COST OF ELECTRICITY</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        14681 
+                        <br />
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>TV FEE</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        35
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF">
+                        <b>METER RENT</b>
+                        <br />
+                        <b>Fix Charges</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                        <br />
+                        200
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>GST</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        3000
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF">
+                        <b>SERVICE RENT</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>INCOME TAX</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF;">
+                        <b>FUEL PRICE ADJUSTMENT</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        1168.59
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>EXTRA TAX</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF;">
+                        <b>F.C SURCHARGE </b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        1211.25
+                        <br />
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>FURTHER TAX</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                        <br />
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF;">
+                        
+                        
+                        
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        
+                        
+
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF;">
+                        
+                        <div> <b>QTR TARRIF ADJ/DMC</b> </div>
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                        <div id="aqtaCrValue">347.33 </div>
+                        
+                    </td>
+
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2;">
+                        <b>RETAILER STAX</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF">
+                        <b>TOTAL</b>
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        17608.17
+                    </td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2">
+
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtdwidth" style="background-color: #B2E6FF"></td>
+                    <td class="border-rb nestedtdwidth content"></td>
+                    <td class="border-rb nestedtdwidth" style="background-color: #FFB2B2">
+                        
+                    </td>
+                    <td class="border-rb nestedtdwidth content">
+                        
+                           
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-r" colspan="2">
+                        <h3>BILL CALCULATION</h3>
+                    </td>
+                    <td class="border-rb" style="background-color: #FFB2B2;" rowspan="3">
+                        
+                        <b>GST ON FPA </b>
+                        <br />
+                        <b>ED ON FPA </b>
+                        <br />
+                        <b>FURTHER TAX ON FPA</b>
+                        <br />
+                        <b>S.TAX ON FPA</b>
+                        <br />
+                        <b>IT ON FPA </b>
+                        <br />
+                        <b>ET ON FPA</b>
+                        <br />
+                        <span>&ensp;-----------------------------&ensp;</span>
+                        <br />
+                        <b>TOTAL TAXES ON FPA</b>
+                        
+                    </td>
+                    <td class="border-rb content" rowspan="3">
+                        
+                        213
+                        <br />
+                        17.53
+                        <br />
+                        `
+                                
+                        <br />
+                        
+                        <br />
+                        
+                        <br />
+                        
+                        <br />
+                        <span>&ensp;-----------------------------&ensp;</span><br /> 230.53
+
+                        
+                    </td>
+                </tr>
+                <tr class="border-b fontsize" style="height: 24px;">
+                    <td class="border-rb" colspan="2" rowspan="3">
+                        <table style="width: 100%;">
+                            
+                            <tr>
+                                <td>GOP Tariff &nbsp; &nbsp; x  &nbsp;&nbsp; Units</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="content">
+                                <td>
+                                     39.1500 X 375<br><br>
+                                </td>
+                            </tr>
+                            <tr style="font-size: 12pt">
+
+                                <td>
+                                
+                                    <div style="text-align: right; direction: rtl; background-color: black; color: white; line-height: 1.4;">
+                                        آپ کا موجودہ بل 21099 روپے ہے -<br>
+                                        جس میں سے وزیر اعلیٰ پنجاب مریم نواز شریف نے 5250 ادا کر دیے ہیں -<br>
+                                        اب آپ کے ذمے بقیہ 15849 روپے واجب الادا ہیں۔
+                                    </div>
+                                
+                                </td>
+
+                            </tr>
+                            
+                        </table>
+
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb" style="background-color: #FFB2B2;"></td>
+                    <td class="border-rb content"></td>
+                </tr>
+                <tr style="height: 32px;" class="fontsize">
+                    <td class="border-rb" rowspan="2" colspan="1">
+                        <table class="display-none" id="impExpt" style="width: 115pt;" >
+                            <tr>
+                                <td></td>
+                                <td><b>Off Peak</b></td>
+                                <td><b>Peak</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Export(kWh) : </b></td>
+                                <td>0</td>
+                                <td>0 </td>
+                            </tr>
+                            <tr>
+                                <td><b>Import(kWh) : </b></td>
+                                <td>375</td>
+                                <td>0 </td>
+                            </tr>
+                            <tr>
+                                <td><b>Net(kWh) : </b></td>
+                                <td>375</td>
+                                <td>0 </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="border-rb" rowspan="2" colspan="1">
+                        <table class="display-none" style="width: 150pt;">
+                            <tr>
+                                <td></td>
+                                <td><b>Previous</b></td>
+                                <td><b>Present</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Month Count = </b></td>
+                                <td>2/3 / 3</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><b>Remaining kWh (O)</b></td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><b>Remaining kWh (P)  </b></td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="border-rb" style="background-color: #FFB2B2;">
+                        <b>TOTAL</b>
+                    </td>
+                    <td class="border-rb content" style="text-align: center">
+                        3490.53
+                    </td>
+                </tr>
+                <tr style="height: 32px;" class="fontsize">
+                    <td class="border-rb" style="background-color: yellow;">
+                        <b>DEFFERRED AMOUNT</b>
+
+                    </td>
+                    <td class="border-rb content" style="text-align: center">
+                        
+                            
+                    </td>
+                </tr>
+                <tr style="height: 32px;" class="fontsize">
+                    <td class="border-rb content" colspan="2">
+                        Fuel Price Adjustment for Jun-24 @  2.5627/KWH
+                        
+
+                        
+                    </td>
+                    <td class="border-rb" style="background-color: yellow;">
+                        <b>OUTSTANDING INST. AMOUNT</b>
+                    </td>
+                    <td class="border-rb content" style="text-align: center">
+                        
+                    </td>
+                </tr>
+                <tr style="height: 24px;" class="fontsize">
+                    <td class="border-rb" style="background-color: #efeff5;">
+                        <b>PROG. GST PAID F-Y</b>
+                    </td>
+                    <td class="border-rb content">
+                        
+                    </td>
+                    <td class="border-rb" style="background-color: #efeff5;">
+                        <b>PROG. IT PAID F-Y</b>
+                    </td>
+                    <td class="border-rb content">
+                        
+                    </td>
+                </tr>
+            </table>
+            <span class="totalch"></span>
+            <table class="nested7" style="width: 295pt; height: 411pt">
+                <tr class="fontsize" style="height: 28px; background-color: #7ADEFF; text-align: center">
+                    <td colspan="4" class="border-b" style="font-size: 16px">
+                        <span class="totalcharges">
+                        <b>TOTAL CHARGES</b>
+                      
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <b>ARREAR/AGE</b>
+                    </td>
+                    <td colspan="3" class="border-b  nestedtd2width content">
+                        0
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <b>CURRENT BILL</b>
+                    </td>
+                    <td colspan="3" class="border-b  nestedtd2width content">
+                        19700
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <b>BILL ADJUSTMENT
+                           
+                    </td>
+                    <td colspan="3" class="border-b  nestedtd2width content">
+                        <br/>
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <b>
+                            INSTALLEMENT
+                            
+                        </b>
+                        <br />
+                        <b class="display-none">
+                            
+                        </b>
+                    </td>
+                    <td colspan="3" class="border-b  nestedtd2width content">
+                        
+                        <br />
+                        <b class="display-none">
+                            
+                        </b>
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 25px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <div id="subsidiesId"><b>SUBSIDIES </b></div>
+                        <div id="releifMsgTitleId"><b> </b></div>
+                    </td>
+                    <td colspan="3" class="border-b nestedtd2width content">
+                        <div id="releifMsgContentId">
+                            </div>
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <div >
+                            <b>TOTAL FPA</b>
+                        </div>
+                        <div hidden>
+                            <b>NET FPA</b>
+                        </div>
+                        <div class="display-none">
+                            <b></b> 
+                        </div>
+                        <div class="display-none">
+                            <b> </b>
+                        </div>
+                    </td>
+                    <td colspan="3" class="border-b  nestedtd2width content">
+                        
+                        <div >
+                            1399
+                        </div>
+                        <div hidden>
+                            
+                        </div>
+                        <div class="display-none">
+                            <b></b>  
+                        </div>
+                        <div class="display-none">
+                           <b>0</b>  
+                        </div>
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="color: Red; background-color: #7ADEFF">
+                        <b>PAYABLE WITHIN DUE DATE</b>
+                    </td>
+                    <td colspan="3" class="border-b nestedtd2width content">
+
+                        
+                        
+
+                                <div style="display: inline-block; margin-right: 10px;">
+                                    15849
+                                </div>
+                                <div style="display: inline-block;">
+                                    <del>21099</del>
+                                </div>
+
+                        
+
+                    </td>
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="background-color: #7ADEFF;">
+                        <b>L.P.SURCHARGE</b>
+                    </td>
+                    
+                    <td colspan="3" class="border-b  nestedtd2width content">
+
+                        
+
+                            <div style="display: inline-block; margin-right: 10px;">
+                                1119
+                            </div>
+                            <div style="display: inline-block;">
+                                <del>1644</del>
+                            </div>
+
+                        
+
+                    </td>
+
+                </tr>
+                <tr class="fontsize" style="height: 24px;">
+                    <td class="border-rb nestedtd2width" style="color: Red; background-color: #7ADEFF">
+                        <b>PAYABLE AFTER DUE DATE</b>
+                    </td>
+
+                    <td colspan="3" class="border-b  nestedtd2width content">
+
+                        
+                        
+
+                                <div style="display: inline-block; margin-right: 10px;">
+                                    16968
+                                </div>
+                                <div style="display: inline-block;">
+                                    <del>22743</del>
+                                </div>
+
+                        
+
+                    </td>
+                </tr>
+                <tr class="fontsize border-b" style="height: 145px;">
+                    <td colspan="2">
+                        <table style="width: 100%">
+                            <tr>
+                            <td id="idmtr1img" style="height: 142px;">
+                                    
+                                    <img id="mtr1img" src="http://snaps.pitc.com.pk/14000/14600/14620/202408-14/202408141462111110001E.jpg" style="height:100%;width:95%;" />
+                                </td>
+
+                                
+                                
+                                
+                                
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+
+                <tr id="idComplaint" class="fontsize border-b" style="border: none; height: 18px;">
+</tr>
+
+                <tr class="fontsize border-b" style="height: 44px;">
+
+                    <td class="border-b" colspan="1" style="text-align: left;">
+
+                        <div style="margin-bottom: 5px">
+                            <b style="text-decoration: underline">SDO #</b>  
+                            <div>
+                                <b>  </b> /03195990621
+                            </div>
+                        </div>
+
+                        <div class="display-none">
+                            <div style="margin-bottom: 5px">
+                                <b style="text-decoration: underline">XEN #</b> 
+                                <div>
+                                    <b> </b> /
+                                </div>
+                            </div>
+                            
+                            
+                            <div style="margin-bottom: 5px">
+                                <b style="text-decoration: underline">SE # </b> 
+                                <div>
+                                    <b> 0000000 </b> /00000000000
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </td>
+
+                    
+                    <td class="border-b " colspan="2" style="text-align: left">
+                        <div>
+                            <b>Center Name : TARIQABAD</b>
+                        </div>
+                        <div>
+                            <b> Ph # : 9334390 </b>
+                        </div>
+                    </td>
+                    <td id="idCallCenterNoMsg" colspan="1" style="text-align: center" class="border-b">
+                        <div>For complaints dial: 118 /SMS: 8118</div>
+                    </td>
+
+                    
+
+                    
+                    <td colspan="1" style="text-align: center" class="border-b">
+                        
+                        
+                        </td>
+                    
+                </tr>
+            </table>
+        </span>      
+    </main>
+    <!-- <footer>
+        <div class="border-b" style="margin-top:30px; width: 100%; height: 25px" id="Tr1">
+            <img src="/images/cuthere.gif" alt="cuthere" id="Img2" />
+        </div>
+        <div class="headertable fontsize">
+            <div>
+                <div style="height: 100%; width: 100px; float: left; display: inline-block; margin: 15px 0 0 15px">
+                    <img style="margin: auto; max-width: 100%; max-height: 100%;" src="/images/companies/iesco/iescoLogo.png"
+                        alt="IESCO" id="Img1" />
+                                                    <span><b>
+                                    www.iesco.com.pk</b></span>
+                </div>
+                <div style="width: 670px; display: inline-block">
+                    <table style="width: 100%; text-align: right;">
+                        <tr>
+                            <td colspan="3">
+                                <h2 style="float: left; font-weight: 800; margin-left: 0px; margin-bottom: 0px;">
+                                    ISLAMABAD ELECTRIC SUPPLY COMPANY
+                                    -
+                                    ELECTRICITY CONSUMER BILL
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; width: 215px; color: #1a75ff;">
+                                <span style="font-size: 11px; color: #1a75ff;"><b>YOUR BETTER SERVICE - OUR PRIDE</b> </span>
+                            </td>
+                            <td style="text-align: left; width: 170px; color: #1a75ff;">
+                                <h3 style="font-size: 14pt; margin-left: 6px;">  </h3> 
+                            </td>
+                            <td>
+                                <table style="width: 230px; margin-right: 20px; float: right; border-collapse: collapse; text-align: center">
+                                    <tr>
+                                        <td class="border-rb border-t" style="border-left: 1px solid #78578e; color: #78578e;">
+                                            <h4>CONSUMER ID</h4>
+                                        </td>
+                                        <td class="border-rb border-t content">
+                                            1142011041
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style="width: 15%; margin-top: 20px; float: right; display: inline-block">
+                    <span>BILL NO <br /> 1</span>
+                    
+                </div>
+
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; ">
+                <div style="border: 1px solid #1a75ff; color: #1a75ff; padding: 20px; border-radius: 100%; width: 35px; text-align: center; margin-left: 50px;">
+                    BANK
+                    <br />
+                    STAMP
+                </div>
+                
+
+                <div style="display: inline-block; vertical-align: middle; height: 70px; margin-right:50px; margin-left:50px">
+                    
+                    
+                        <svg id="normal_bill_barcode"></svg>
+                        
+                    
+                    <div>AUG 24 - 14 14621 1111000 - 000015849 - 20 SEP 24 - 6</div>
+                    
+    </footer> -->
+</body>
+</html>
